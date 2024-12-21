@@ -1,0 +1,36 @@
+{
+    "home": {
+      "title": "Hi! I am Diego Gelvis",
+      "description": "Frontend Developer from Venezuela"
+    },
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "projects" : "Projects",
+        "contact": "Contact",
+        "download" : "Download CV"
+    },
+    "about": {
+        "title": "About Me",
+        "description": "Front-end developer with experience in React, JavaScript, and Tailwind CSS. Passionate about creating dynamic and efficient web interfaces, I stand out for my focus on continuous learning and creative problem-solving. I'm excited to kickstart my professional career and contribute innovative solutions to meaningful projects."
+  },
+  "proyects" : {
+        "proy" : "Proyects",
+        "skills" : "Skills",
+        "school" : "School Site",
+        "school-d" : "This school management project allows students to organize their tasks, teachers to assign and grade, and administrators to manage users. Additionally, it includes authentication systems, subject assignment, and grade visualization.",
+       "notes" : "Notes",
+        "notes-d" : "This project is a web application developed with React that allows users to manage their notes easily and intuitively. The application uses Vite to optimize its performance and Tailwind CSS for a modern and responsive design.",
+        "calculator" : "Calculator",
+        "calculator-d" : "This project involves the development of a functional calculator using React, designed to perform basic mathematical operations such as addition, subtraction, multiplication, and division."
+    },
+    "contact" :{
+        "contact" : "Contact",
+        "name" : "Name",
+        "email" : "Email",
+        "message": "Message",
+        "send" : "Send",
+        "alert" : "Message sent successfully!"
+    }
+
+  }
