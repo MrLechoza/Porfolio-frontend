@@ -12,7 +12,7 @@ i18n
     supportedLngs: ["en", "es"], 
     debug: true, 
     backend: {
-      loadPath: "/locales/{{lng}}/translation.json", 
+      loadPath: "./locales/{{lng}}/translation.json", 
     },
     detection: {
       order: ["localStorage", "navigator", "htmlTag"], 
