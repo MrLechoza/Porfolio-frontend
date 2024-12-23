@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 function About() {
   const {t} = useTranslation()
   return (
-    <div id="about" className="flex flex-col  sm:gap-20 xl:gap-20 md:flex-col lg:flex-col xl:flex-row 2xl:flex-row justify-center items-center py-20 mt-40">
+    <div id="about" className="flex  flex-col  sm:gap-20 xl:gap-20 md:flex-col lg:flex-col xl:flex-row 2xl:flex-row justify-center items-center py-20 xs:mx-10 xs:gap-10 mt-40">
       <article className="flex flex-col xl:w-[700px] lg:w-[700px] md:w-[500px] sm:w-[400px]">
         <h1 className="text-white font-russo  text-3xl p-2">{t("about.title")}</h1>
         <p className="text-white text-sm border border-1 rounded-lg leading-7 p-10 w-full">

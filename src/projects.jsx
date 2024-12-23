@@ -32,16 +32,14 @@ function Projects() {
     },
     {
       title: t("proyects.notes"),
-      description:
-      t("proyects.notes-d"),
+      description: t("proyects.notes-d"),
       image: Notas,
       icon: [react, javascript, tailwind],
       github: "https://github.com/MrLechoza/Proyectos",
     },
     {
       title: t("proyects.calculator"),
-      description:
-      t("proyects.calculator-d"),
+      description: t("proyects.calculator-d"),
       image: Calculadora,
       icon: [react, javascript, css],
       github: "https://github.com/MrLechoza/Proyectos-2-Calculadora",
@@ -63,19 +61,21 @@ function Projects() {
   }, [t]);
 
   return (
-    <div id="projects" className="flex flex-col w-[1080px] mx-auto py-20">
-      <h1 className="text-white font-russo  text-3xl p-2"> {t("proyects.proy")} </h1>
-      <div className="flex gap-10 justify-center items-center mt-2">
+    <div id="projects" className="flex flex-col max-w-[1150px] mx-auto py-20">
+      <h1 className="text-white font-russo text-3xl px-12">
+        {t("proyects.proy")}
+      </h1>
+      <div className="flex flex-wrap gap-10 2xl:flex-nowrap xl:flex-nowrap xs:mx-10 justify-center items-center mt-2">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative cursor-pointer group hover:-translate-y-2 transform ease-in-out duration-300 "
+            className="relative cursor-pointer group hover:-translate-y-2 transform ease-in-out duration-300 w-full sm:w-[300px] md:w-[350px] lg:w-[400px] xl:w-[450px]"
             onClick={() => handleSelectProject(project)}
           >
             <img
               src={project.image}
               alt={project.title}
-              className="rounded-lg w-[350px] h-[160px] object-cover"
+              className="rounded-lg w-full h-[160px] object-cover"
             />
             <div className="absolute rounded-lg inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <h2 className="text-white font-russo text-lg">{project.title}</h2>
@@ -84,8 +84,8 @@ function Projects() {
         ))}
       </div>
 
-      <div className="flex mt-8  border rounded-lg">
-        <div className="flex flex-col p-10 w-[650px]">
+      <div className="flex flex-col mt-8 border rounded-lg md:mx-10 md:flex-row sm:mx-10 xs:mx-10">
+        <div className="flex flex-col p-10 w-full md:w-[650px]">
           <div className="flex items-center justify-between">
             <h2 className="text-lg font-russo text-white">
               {selectedProject.title}
@@ -94,7 +94,7 @@ function Projects() {
               href={selectedProject.github}
               target="_blank"
               rel="noopener noreferrer"
-              className=" w-8 h-8 sm:w-6 object-cover sm:h-6 hover:-translate-y-1 ease-in-out duration-300 transform"
+              className="w-8 h-8 sm:w-6 object-cover sm:h-6 hover:-translate-y-1 ease-in-out duration-300 transform"
             >
               <img src={github} alt="Github icon" />
             </a>
@@ -103,8 +103,10 @@ function Projects() {
             {selectedProject.description}
           </p>
 
-          <div className="">
-            <h2 className="font-russo text-sm mt-3 text-white">{t("proyects.skills")}</h2>
+          <div>
+            <h2 className="font-russo text-sm mt-3 text-white">
+              {t("proyects.skills")}
+            </h2>
             <div className="flex gap-4 mt-4">
               {selectedProject.icon.map((icon, index) => (
                 <div key={index}>
@@ -122,7 +124,7 @@ function Projects() {
         <img
           src={selectedProject.image}
           alt={selectedProject.title}
-          className="w-[500px] object-fill rounded-tr-md rounded-br-md"
+          className="w-full md:w-[500px] object-fill rounded-tr-md rounded-br-md"
         />
       </div>
     </div>
