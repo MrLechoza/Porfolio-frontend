@@ -6,7 +6,7 @@ function Home() {
   const { t } = useTranslation();
   return (
     <div id="home" className="pt-20">
-      <h1 className="mt-20 flex justify-center items-center font-russo text-5xl text-white">
+      <h1 className="mt-20 flex justify-center items-center font-russo text-5xl xs:text-4xl text-white">
         {t("home.title")}
       </h1>
       <p className="flex mt-5 border border-b w-[600px] mx-auto items-center" />

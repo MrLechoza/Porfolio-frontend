@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xs: "480px",
+        xs: "400px",
       },
       fontFamily: {
         russo: ['"Russo One"', "sans-serif"],
