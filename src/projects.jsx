@@ -124,7 +124,7 @@ function Projects() {
         <img
           src={selectedProject.image}
           alt={selectedProject.title}
-          className="w-full md:w-[500px] object-fill rounded-tr-md rounded-br-md"
+          className="w-full md:w-[500px] object-fill xl:rounded-tr-md xl:rounded-br-md lg:rounded-tr-md lg:rounded-br-md  md:rounded-tr-md md:rounded-br-md xs:rounded-bl-md xs:rounded-br-md"
         />
       </div>
     </div>
