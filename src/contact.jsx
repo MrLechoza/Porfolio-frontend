@@ -19,7 +19,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("https://tu-backend.onrender.com/api/contact/", {
+    fetch("https://porfolio-backend-1.onrender.com/contact/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
