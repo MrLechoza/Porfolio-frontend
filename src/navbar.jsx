@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-[#000000b2] backdrop-blur-sm">
+    <div className="fixed top-0 left-0 w-[full] xs:w-full z-50 bg-[#000000b2] backdrop-blur-sm">
       <div className="hidden md:flex py-3 gap-10 justify-center items-center">
         <HashLink smooth to="/#home" className="text-white relative group">
           {t("navbar.home")}

@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="py-20  mx-auto 2xl:w-[500px] xl:w-[500px] lg:w-[500px] sm:w-[400px] xs:w-[350px]">
+    <div id="contact" className="py-20  mx-auto 2xl:w-[500px] xl:w-[500px] lg:w-[500px] sm:w-[400px] xs:w-[300px]">
       <div className="flex justify-between  items-center">
         <h2 className="text-white font-russo text-3xl p-2">{t("contact.contact")}</h2>
         <div className="flex gap-3 mr-2">
@@ -60,7 +60,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
-      <div className="2xl:w-[500px] xl:w-[500px] lg:w-[500px] sm:w-[400px] xs:w-[350px]">
+      <div className="2xl:w-[500px] xl:w-[500px] lg:w-[500px] sm:w-[400px] xs:w-[300px]">
         <form className="flex flex-col gap-3 " onSubmit={handleSubmit}>
           <input
             type="text"

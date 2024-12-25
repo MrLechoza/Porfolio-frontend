@@ -6,10 +6,10 @@ function Home() {
   const { t } = useTranslation();
   return (
     <div id="home" className="pt-20">
-      <h1 className="mt-20 flex justify-center items-center font-russo text-5xl xs:text-4xl text-white">
+      <h1 className="mt-20 flex justify-center items-center font-russo text-5xl xs:text-3xl text-white">
         {t("home.title")}
       </h1>
-      <p className="flex mt-5 border border-b w-[600px] mx-auto items-center" />
+      <p className="flex mt-5 border border-b w-[330px] mx-auto items-center" />
       <p className="flex justify-center items-center text-white mt-5">
         {t("home.description")}
       </p>
