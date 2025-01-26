@@ -3,6 +3,7 @@ import { HashLink } from "react-router-hash-link";
 import { useTranslation } from "react-i18next";
 import { HiMenuAlt3 } from "react-icons/hi"
 
+
 function Navbar() {
   const { t, i18n } = useTranslation();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -30,7 +31,7 @@ function Navbar() {
           {t("navbar.contact")}
           <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-white transition-transform duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
         </HashLink>
-        <a href="DiegoGCv_2024.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="Cv_Enero2025.pdf" target="_blank" rel="noopener noreferrer" title="Download CV">
           <button className="text-white border px-2 py-1 rounded-lg hover:-translate-y-1 ease-in-out transform duration-300">
             {t("navbar.download")}
           </button>
@@ -49,7 +50,7 @@ function Navbar() {
         >
           {isDrawerOpen ? <HiMenuAlt3 /> : <HiMenuAlt3 />}
         </button>
-        <a href="Cv_Enero2025.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="Cv_Enero2025.pdf" target="_blank" rel="noopener noreferrer" title="Download CV" >
           <button className="text-white border px-2 py-1 rounded-lg">
             {t("navbar.download")}
           </button>
