@@ -21,8 +21,8 @@
         "school-d" : "Este proyecto de gestión escolar permite a los estudiantes organizar sus tareas, a los profesores asignar y calificar, y a los administradores gestionar usuarios. Además, incluye sistemas de autenticación, asignación de materias y visualización de calificaciones.",
         "notes" : "Notas",
         "notes-d" : "Este proyecto es una aplicación web desarrollada con React que permite a los usuarios gestionar sus notas de manera sencilla e intuitiva. La aplicación utiliza Vite para optimizar su rendimiento y Tailwind CSS para un diseño moderno y responsivo.",
-        "calculator" : "Calculadora",
-        "calculator-d" : "Este proyecto consiste en el desarrollo de una calculadora funcional utilizando React, diseñada para realizar operaciones matemáticas básicas como suma, resta, multiplicación y división."
+        "multiplayergame" : "Ping Pong",
+        "multiplayergame-d" : "Un juego en tiempo real desarrollado con React, TypeScript, Django, Django Channels y WebSocket, que permite a los jugadores competir entre sí en partidas sincronizadas."
     },
     "contact" :{
         "contact" : "Contacto",

@@ -1,15 +1,17 @@
 import login from "./assets/login.png";
 import Notas from "./assets/notas.png";
-import Calculadora from "./assets/calculadora.png";
+import pingpong from "./assets/PingPong.png";
 import { useState, useEffect } from "react";
 import django from "./assets/django.svg";
 import react from "./assets/react.svg";
 import tailwind from "./assets/tailwind.svg";
 import python from "./assets/python.svg";
 import javascript from "./assets/javascript.svg";
-import vite from "./assets/vite.svg";
-import css from "./assets/css.svg";
 import github from "./assets/github.svg";
+import typescript from "./assets/typescript.svg";
+import postman from "./assets/postman.svg";
+import websocket from "./assets/websocket.svg";
+import link from "./assets/link.svg";
 import { useTranslation } from "react-i18next";
 
 function Projects() {
@@ -18,7 +20,7 @@ function Projects() {
     title: t("proyects.school"),
     description: t("proyects.school-d"),
     image: login,
-    icon: [python, django, javascript, react, tailwind, vite],
+    icon: [python, django, javascript, react, tailwind],
     github: "https://github.com/MrLechoza/School-Site.V2",
   });
 
@@ -38,11 +40,12 @@ function Projects() {
       github: "https://github.com/MrLechoza/Proyectos",
     },
     {
-      title: t("proyects.calculator"),
-      description: t("proyects.calculator-d"),
-      image: Calculadora,
-      icon: [react, javascript, css],
-      github: "https://github.com/MrLechoza/Proyectos-2-Calculadora",
+      title: t("proyects.multiplayergame"),
+      description: t("proyects.multiplayergame-d"),
+      image: pingpong,
+      icon: [react, javascript, typescript, python, django, tailwind, postman, websocket ],
+      github: "https://github.com/MrLechoza/Ping-Pong",
+      url : "http://209.46.122.239/"
     },
   ];
 
@@ -55,7 +58,7 @@ function Projects() {
       title: t("proyects.school"),
       description: t("proyects.school-d"),
       image: login,
-      icon: [python, django, javascript, react, tailwind, vite],
+      icon: [python, django, javascript, react, tailwind],
       github: "https://github.com/MrLechoza/School-Site.V2",
     });
   }, [t]);
@@ -90,6 +93,7 @@ function Projects() {
             <h2 className="text-lg font-russo text-white">
               {selectedProject.title}
             </h2>
+            <div className="flex gap-4">
             <a
               href={selectedProject.github}
               target="_blank"
@@ -98,6 +102,18 @@ function Projects() {
             >
               <img src={github} alt="Github icon" />
             </a>
+            {selectedProject.url && (
+              <a
+                href={selectedProject.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 sm:w-6 object-cover sm:h-6 hover:-translate-y-1 ease-in-out duration-300 transform"
+                >
+                <img src={link} alt="URL icon" />
+              </a>
+            )}
+            </div>
+            
           </div>
           <p className="text-white text-xs leading-5 w-full mt-3">
             {selectedProject.description}
