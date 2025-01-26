@@ -49,7 +49,7 @@ function Navbar() {
         >
           {isDrawerOpen ? <HiMenuAlt3 /> : <HiMenuAlt3 />}
         </button>
-        <a href="DiegoGCv_2024.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="Cv_Enero2025.pdf" target="_blank" rel="noopener noreferrer">
           <button className="text-white border px-2 py-1 rounded-lg">
             {t("navbar.download")}
           </button>
